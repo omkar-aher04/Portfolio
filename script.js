@@ -2,11 +2,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
   trigger: ".career-row",
-  start: "80px 110px",  // adjust to match where you want the image to stick
+  start: "100px 110px",  // adjust to match where you want the image to stick
   end: () => {
     const left = document.querySelector(".txt");
     // pin until the text section has scrolled through
-    return "+=" + (left.scrollHeight - window.innerHeight + 190);
+    return "+=" + (left.scrollHeight - window.innerHeight + 150);
   },
   pin: ".Fimages",
   pinSpacing: true,
